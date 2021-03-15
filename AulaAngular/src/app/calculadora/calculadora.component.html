@@ -1,1 +1,5 @@
-<p>calculadora works!</p>
+<input type="number" [(ngModel)]="valor1" (input) = "conta()">
+<input type="text" [(ngModel)]="sinal" (input) = "conta()">
+<input type="number" [(ngModel)]="valor2" (input) = "conta()">
+<!--<input type="radio" [(ngModel)]="sinal">-->
+<h3>Resultado: {{resultado}}</h3>
