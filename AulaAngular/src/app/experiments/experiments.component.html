@@ -1,3 +1,13 @@
-<input type="text" (input)="changeName($event)" value={{name}} [style.color]="name">
+<input type="text" (input)="changeName($event)" value={{name}} [style.color]="name" #refExp>
 <p>Olá Sir. {{name}}</p>
+<h1> Animaus Diretiva NG FOR</h1>
+<div *ngFor="let item of arrayAnimais">
+  <h3> {{item}}</h3>
+</div>
 
+<button class="btn btn-success">Button Success</button>
+
+<app-exp2 [nameRecebido] = 'name'></app-exp2>
+
+<button  (click)="analisarReferencia()">Ola asd asd</button>
+<!--<button  (click)="analisarReferenciaPorParamentro(referencia)">Ola asd asd</button>-->

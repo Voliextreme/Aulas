@@ -1,0 +1,8 @@
+<select [(ngModel)]="animal" #referenciaParaEsteSelect>
+  <option>Cao</option>
+  <option>Gato</option>
+  <option>Rato</option>
+  <option>Aguia</option>
+</select>
+<app-animais2 [animalRecebido] = 'referenciaParaEsteSelect.value'></app-animais2>
+

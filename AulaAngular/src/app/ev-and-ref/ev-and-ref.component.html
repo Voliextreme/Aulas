@@ -1,0 +1,7 @@
+<input type="text" [style.background-color]="cor" (mouseenter)='changeColor(cor = "red")' (focus)='changeColor(cor = "pink")' (blur)='changeColor(cor = "grey")' (input)='changeColor(cor = "green")' (copy)='changeColor(cor = "yellow")' #refInput>
+
+<button  (click)="fade(refInput)">Fade</button>
+
+<button  (click)="size(refInput)">Sizing</button>
+
+<button  (click)="Bold(refInput)">Teleport</button>
